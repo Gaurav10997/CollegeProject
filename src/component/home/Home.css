@@ -1,0 +1,19 @@
+
+.home-card{
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 220px;
+    justify-content: start;
+    flex-wrap: auto;
+}
+.home-heading{
+    margin-top: 100px;
+    margin-left: 20px;
+    margin-bottom: 30px;
+    
+}
+.welcomebox{
+    height: 60vh;
+    margin-left: 100px;
+    margin-right: auto;
+}
