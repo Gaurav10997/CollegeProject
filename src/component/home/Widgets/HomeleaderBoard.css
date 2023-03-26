@@ -1,0 +1,12 @@
+.HomeLeaderBoard-main{
+    width: 80%;
+    height: 70vh;
+    background-color: grey;
+}
+
+.HomeLeaderBoard-div{
+    margin: 6em 1em;
+    background-color: #6990F2;
+    width: 85%;
+    height: 400px;
+}

@@ -1,3 +1,11 @@
+.left-heading{
+    margin-top: 10px;
+}
+
+.home-main{
+    display: flex;
+    justify-content: space-around;
+}
 
 .home-card{
     display: flex;
@@ -12,8 +20,18 @@
     margin-bottom: 30px;
     
 }
-.welcomebox{
-    height: 60vh;
-    margin-left: 100px;
-    margin-right: auto;
+.home-right{
+    width: 400px;
+    margin-left: 30px;
+    
+    
 }
+.hline{
+    width:5px;
+    height: 100%;
+    background-color:lightblue;
+} 
+
+
+
+

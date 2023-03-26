@@ -1,0 +1,36 @@
+.topic-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: 200px;
+    background: #3C84AB;
+    cursor: pointer;
+    border-radius: 10px;
+    color: white;
+    margin: 10px 10px ;
+    max-width: 400px;
+    min-width: 350px;
+    /* transition: opacity ease-out 4.6s; */
+    background-color: #8BC6EC;
+    background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+    
+
+}
+.topic-card:hover{
+    transform: scale(1.05);
+    transition-timing-function: ease;
+    transition-duration: .5s;
+}
+.topic-card-heading{
+    color: white;
+}
+.topic-card-btn{
+    width: 100px;
+    padding: 0.75em;
+    border-radius: 3px;
+    border: none;
+    margin-top: 2.8em;
+    
+}

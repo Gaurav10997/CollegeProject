@@ -1,0 +1,12 @@
+.practise-heading{
+    text-align: center;
+}
+.practise{
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 200px;
+    margin-left: 17vw;
+    margin-right: 10vw;
+
+
+}

@@ -1,0 +1,17 @@
+.userBox{
+    display: flex;
+    width: 80%;
+    justify-content: space-around;
+    height: 6%;
+    background-color:#3A98B9;
+    border: 2px solid lightblue;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 13px;
+    font-size: large;
+    color: #EEEEEE;
+    margin-top: 2px;
+    cursor: pointer;
+}
