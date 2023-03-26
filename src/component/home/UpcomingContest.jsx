@@ -1,8 +1,8 @@
 import React from 'react'
 import Card from './Card'
-import "./UpcomingContest.css"
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
+import "./UpcomingContest.css"
 function UpcomingContest() {
     let pastContestColor = "#c1dff0"
     const responsive = {
@@ -25,7 +25,7 @@ function UpcomingContest() {
           }
         };
   return (
-    <>
+    <div className="upcoming-contest-wrapper">
     <Card 
         color={`${pastContestColor}`}
         image="https://cdn-icons-png.flaticon.com/128/335/335631.png" 
@@ -48,7 +48,7 @@ function UpcomingContest() {
       title=" DSA Contest 4"  
       description =""/>
     
-    </> 
+    </div> 
   )
 }
 

@@ -1,19 +1,24 @@
 .card{
-    margin-top: 20px;
-    text-align: center;
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 10px;
+
+}
+
+.card .card-box{
+    margin-top: 1.3rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width:270px;
-    background: skyblue;
-    padding: 20px;
-    border-radius: 10px;
-    cursor: pointer;
-    margin-left: 20px;
-    height: 180px;
 }
-.card-image{
-  width: 100px;
-  
+
+.card .card-box img{
+  width: 5rem;
+  height: 5rem;
+}
+
+.card .card-box h1{
+  font-size: 1rem;
+  margin: 1rem 0.2rem;
 }

@@ -1,7 +1,7 @@
 import React from 'react'
 import NavBar from '../globalUtility/Navbar'
-import "./LeaderBoard.css"
 import UserBox from './UserBox'
+import "./LeaderBoard.css"
 function LeaderBoard() {
   return (
     <>
