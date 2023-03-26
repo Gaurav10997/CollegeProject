@@ -4,9 +4,11 @@ function Card(props) {
     
   return (
     <div className="card" style={{backgroundColor: props.color}} >
-        <img className='card-image' src={props.image} alt="" />
-        <h1>{props.title}</h1>
-        <p>{props.description}</p>
+        <div className='card-box'>
+            <img src={props.image} alt="" />
+            <h1>{props.title}</h1>
+            <p>{props.description}</p>
+        </div>  
     </div>
   )
 }

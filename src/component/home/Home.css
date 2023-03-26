@@ -4,34 +4,33 @@
 
 .home-main{
     display: flex;
-    justify-content: space-around;
+    margin: 1rem;
 }
 
-.home-card{
-    display: flex;
-    flex-wrap: wrap;
-    min-width: 220px;
-    justify-content: start;
-    flex-wrap: auto;
+.home-main .home-left{
+    flex-basis: 70%;
 }
-.home-heading{
-    margin-top: 100px;
-    margin-left: 20px;
-    margin-bottom: 30px;
-    
-}
-.home-right{
-    width: 400px;
-    margin-left: 30px;
-    
-    
-}
-.hline{
-    width:5px;
-    height: 100%;
-    background-color:lightblue;
-} 
 
+.home-main .home-left .home-heading-pink-community{
+    margin: 2rem 1rem 1rem 1rem;
+    color: #f164d3;
+    font-size: 2rem;
+}
 
+.home-main .home-left .home-card-pink-community{
+    padding-bottom: 2rem;
+    border-bottom: 2px solid rgb(1, 46, 61); 
+}
+
+.home-main .home-left .home-heading-upcoming-contest{
+    margin: 2rem 1rem 1rem 1rem;
+    color: #042f78;
+    font-size: 2rem;
+}
+
+.home-main .home-right{
+    flex-basis: 29%;
+    margin: 1rem;
+}
 
 

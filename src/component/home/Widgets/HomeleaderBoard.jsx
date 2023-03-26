@@ -8,7 +8,7 @@ function HomeLeaderBoard() {
         </div>
 
         <div className="HomeLeaderBoard-rankers">
-
+            
         </div>
 
         <div className="HomeLeaderBoard-normal">

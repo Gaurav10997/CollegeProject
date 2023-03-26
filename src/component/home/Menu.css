@@ -1,5 +1,6 @@
-.upcoming-contest-wrapper{
+.cards-wrapper{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(13rem,1fr));
     gap: 1rem;
+
 }

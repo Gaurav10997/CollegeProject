@@ -1,4 +1,3 @@
-import './App.css'
 import { BrowserRouter } from 'react-router-dom'
 import { Route ,Routes  } from 'react-router-dom'
 import { Link } from 'react-router-dom'
@@ -6,6 +5,7 @@ import LeaderBoard from './component/LeaderBoard/LeaderBoard'
 import Home from './component/home/Home'
 import Practise from './component/practiseDsa/Practise'
 import Contest from './component/Contest/Contest'
+import './App.css'
 function App() {
   return (
     <>
