@@ -8,17 +8,13 @@ function Practise() {
   return (
     <>
     <NavBar></NavBar>
-    <br />
-    <br />
     <h1 className='practise-heading'>Most Asked InterView Question</h1>
-    <br />
     <div className="practise">
-    
-   {topics.map((topic)=>{
-    return(
-        <TopicCard topic= {topic} />
-    )
-   })}
+        {topics.map((topic)=>{
+          return(
+              <TopicCard topic= {topic}/>
+          )
+        })}
     </div>
     </>
   )
