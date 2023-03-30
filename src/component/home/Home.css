@@ -61,16 +61,18 @@
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
     padding: 4px;
+    max-width: 80px;
+    min-width: 30px;
 }
 .HomeLeaderBoard-rankers-rank2>h2,.HomeLeaderBoard-rankers-rank1>h2{
     font-size: 0.9rem;
 }
 .HomeLeaderBoard-rankers-rank2{
-    height: 60%;
+    height: 4.5em;
     width: 23%;
 }
 .HomeLeaderBoard-rankers-rank1{
-    height: 85%;
+    height: 7em;
     width: 25%;
 }
 

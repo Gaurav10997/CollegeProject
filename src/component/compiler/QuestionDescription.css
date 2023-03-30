@@ -1,0 +1,15 @@
+.QuestionDescription__stats{
+    padding: 10px;
+    display: flex;
+    justify-content: flex-start;
+}
+.QuestionDescription__stats__items{
+    padding: 10px;
+}
+
+.QuestionDescription__paragraph{
+    padding-left: 10px;
+    line-height: 2;
+    font-size: 1.3rem;
+    max-width: 1200px;
+}
