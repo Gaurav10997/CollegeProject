@@ -1,0 +1,35 @@
+[33mcommit 11648bf87a458a3b7ad4a5163c6ec67f6c38eec2[m[33m ([m[1;36mHEAD -> [m[1;32mpractise-dsa[m[33m, [m[1;31morigin/practise-dsa[m[33m)[m
+Author: Akash kumar <akash8825317696@gmail.com>
+Date:   Wed Mar 29 10:03:29 2023 +0530
+
+    responsive using grid on practise-dsa page
+
+[33mcommit 0dd8adb927439577bfc32589e4d96d722517cbc9[m[33m ([m[1;31morigin/home-page[m[33m, [m[1;32mhome-page[m[33m)[m
+Author: Akash kumar <akash8825317696@gmail.com>
+Date:   Sun Mar 26 23:47:01 2023 +0530
+
+    home-page-refactor
+
+[33mcommit d20f66eebc7e24137a0c44c89b467abea9acd149[m[33m ([m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmaster[m[33m)[m
+Author: Gaurav10997 <avdhika@gmail.com>
+Date:   Sun Mar 26 13:28:15 2023 +0530
+
+    home page
+
+[33mcommit f49d1e0c477a7374eff3317f3cf98c09d19f584f[m
+Author: Gaurav10997 <avdhika@gmail.com>
+Date:   Sat Mar 25 20:04:30 2023 +0530
+
+    card
+
+[33mcommit 69e8777753e6c8214d6a1aa7e1fca1e54aaa4852[m
+Author: Gaurav10997 <avdhika@gmail.com>
+Date:   Sat Mar 25 14:08:01 2023 +0530
+
+    cleanup process
+
+[33mcommit f844e86a9c368304f91ed569df3cad015c1793d6[m
+Author: Gaurav10997 <avdhika@gmail.com>
+Date:   Sat Mar 25 13:33:21 2023 +0530
+
+    npm install
