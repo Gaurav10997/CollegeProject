@@ -9,16 +9,19 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@codemirror/lang-java": "^6.0.1",
     "@emotion/react": "^11.10.6",
     "@emotion/styled": "^11.10.6",
     "@mui/icons-material": "^5.11.11",
     "@mui/material": "^5.11.14",
     "@mui/styled-engine-sc": "^5.11.11",
+    "@uiw/react-codemirror": "^4.19.10",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-multi-carousel": "^2.8.2",
     "react-router": "^6.9.0",
     "react-router-dom": "^6.9.0",
+    "react-split": "^2.0.14",
     "react-twitter-widgets": "^1.11.0",
     "styled-components": "^5.3.9"
   },
