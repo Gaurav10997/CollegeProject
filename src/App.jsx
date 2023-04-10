@@ -6,6 +6,7 @@ import Home from './component/home/Home'
 import Compiler from './component/compiler/Compiler'
 import Practise from './component/practiseDsa/Practise'
 import Contest from './component/Contest/Contest'
+import Login from './component/LoginandSignup/login'
 import './App.css'
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Route path='/leaderBoard' element= {<LeaderBoard/>}/>
       <Route path='/contest' element= {<Contest></Contest>}/>
       <Route path='/compiler' element={<Compiler></Compiler>}/>
+      <Route path='/login' element={<Login></Login>}/>
     </Routes>  
     </BrowserRouter>
     </>
