@@ -1,0 +1,12 @@
+.congratulations,.Error{
+    flex: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Error-heading{
+    margin-bottom: 40px;
+
+}

@@ -1,8 +1,11 @@
 import React from 'react'
 import "./TopicCard.css"
 
+
+
 function TopicCard(props) {
   return (
+
     <div className='topic-card' >
 
         <h1 className='topic-card-heading'>{props.topic}</h1>

@@ -1,17 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;800&display=swap');
 .topic-card{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 40%;
-    height: 200px;
+    padding: 1rem 0.5rem;
+    /* width: 40%; */
+    height: 40vh;
     background: #3C84AB;
     cursor: pointer;
     border-radius: 10px;
     color: white;
-    margin: 10px 10px ;
-    max-width: 400px;
-    min-width: 350px;
+    /* margin: 10px 10px ; */
+    /* max-width: 400px; */
+    /* min-width: 350px; */
     /* transition: opacity ease-out 4.6s; */
     background-color: #8BC6EC;
     background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
@@ -23,14 +25,46 @@
     transition-timing-function: ease;
     transition-duration: .5s;
 }
+
+.topic-card p{
+    font-size: 1.2rem;
+    margin-top: .6rem;
+}
+
 .topic-card-heading{
     color: white;
+    font-size: 2.1rem;
+    text-transform: uppercase;
 }
+
 .topic-card-btn{
-    width: 100px;
-    padding: 0.75em;
-    border-radius: 3px;
+    font-family: 'Poppins', sans-serif;
+    width: 30%;
+    height: 18%;
+    /* padding: 0.75em; */
+    border-radius: 5px;
     border: none;
+    box-shadow: 0 0 5px rgb(62, 62, 62);
     margin-top: 2.8em;
+    font-size: 1rem;
+    /* text-transform: uppercase; */
+    font-weight: bold;   
+}
+
+.topic-card-btn:hover{
+    background: #8BC6EC;
+    color: #eee;
+    /* cursor: pointer; */
+}
+
+@media (max-width: 479px) {
+    .topic-card-heading{
+        color: white;
+        font-size: 2rem;
+    }
+    .topic-card p{
+        margin-top: .4rem;
+        font-size: .8rem;
+    }
     
 }
