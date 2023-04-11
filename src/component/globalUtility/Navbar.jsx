@@ -12,9 +12,10 @@ import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
+import "./menu-item.css"
 
 const pages = ['Home', 'Problems', 'LeaderBoard'];
-const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
+const settings = ['Profile', 'Account', 'Dashboard', 'Logout','signout'];
 
 function NavBar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -131,7 +132,7 @@ function NavBar() {
                 <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
               </IconButton>
             </Tooltip>
-            <Menu
+            <Menu className='menu'
               sx={{ mt: '0px' }}
               id="menu-appbar"
               anchorEl={anchorElUser}
@@ -148,8 +149,8 @@ function NavBar() {
               onClose={handleCloseUserMenu}
             >
               {settings.map((setting) => (
-                <MenuItem key={setting} onClick={handleCloseUserMenu}>
-                  <Typography textAlign="center">{setting}</Typography>
+                <MenuItem key={setting} onClick={handleCloseUserMenu} className='menu-item'>
+                  <Typography textAlign="center" >{setting}</Typography>
                 </MenuItem>
               ))}
             </Menu>

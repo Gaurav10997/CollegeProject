@@ -3,7 +3,6 @@ import Navbar from '../globalUtility/Navbar'
 import Widgets from './Widgets/Widgets'
 import Menu from './Menu'
 import UpcomingContest from './UpcomingContest'
-import HomeLeaderBoard from './Widgets/HomeleaderBoard'
 import "./Home.css"
 function Home() {
   return (

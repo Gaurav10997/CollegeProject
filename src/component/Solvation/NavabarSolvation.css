@@ -1,0 +1,41 @@
+.solve__navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3C84AB;
+    margin: 0;
+    padding: 1rem 0.3rem;
+    font-size: 1.5rem;
+    color: black;
+    font-weight: bold;
+    box-shadow: 0 0 5px grey;
+    margin-bottom: .3em;
+}
+
+.status,.title,.difficulty,.solve{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.status{
+    flex-basis: 20%;
+    
+}
+.title{
+    flex-basis: 45%;
+   
+    
+}
+.difficulty{
+    flex-basis: 20%;
+}
+
+.solve{
+    flex-basis: 15%;
+    
+}
+
+.status p:hover ,.solve p:hover ,.difficulty p:hover, .title p:hover{
+    cursor: default;
+}
