@@ -1,11 +1,10 @@
 import React from 'react'
 import Loginviacard from './Loginviacard'
-import { useState ,useRef , useContext } from 'react'
-import "./login.css"
+import {useState ,useRef,useContext } from 'react'
 import AuthContext from '../../store/AuthContest';
-
+import "./login.css"
 function Login() {
-  const [newUser, setNewUser] = useState(false);
+  const [newUser, setNewUser] = useState(true);
   const enteredEmailref = useRef();
   const enteredPasswordref = useRef();
   const [errorMessage, setErrorMessage] = useState("");
@@ -14,44 +13,76 @@ function Login() {
     e.preventDefault();
     const enteredEmail = enteredEmailref.current.value;
     const enteredPassword = enteredPasswordref.current.value;
+    enteredEmailref.current.value="";
+    enteredPasswordref.current.value="";
     const userInfo = {
       email: enteredEmail,
       password: enteredPassword,
       returnSecureToken: true
     };
-    let url;
-    if (!newUser) {
-      url =
-        "https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=AIzaSyBlvwokXZ0SoPCq00Mtg-Usj4z0ByGwlpg";
-    } else {
-      url="https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyBlvwokXZ0SoPCq00Mtg-Usj4z0ByGwlpg"
+    
+    if(newUser){
+      //Rest Api for Sign in With Google 
+      fetch("https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=AIzaSyBlvwokXZ0SoPCq00Mtg-Usj4z0ByGwlpg",{
+        method:"POST",
+        body:JSON.stringify(userInfo),
+        headers:{
+          "Content-Type": "application/json"
+        }
+      
+      })
+      .then((res)=>{
+        if(res.ok){
+           
+        }
+        else{
+            return res.json().then((data)=>{
+            console.log(data);
+             setErrorMessage( data.error.message)
+          })
+        }
+      })
+      .catch((error)=>{
+        console.log(error);
+      })
+      
     }
-    fetch(url, {
-      method: "POST",
-      body: JSON.stringify(userInfo),
-      headers: {
-        "Content-Type": "application/json"
-      }
-    })
-    .then((res)=>{
-      return res.json();
-    })
-    .then((data)=>{
-      authCtx.login(data.idToken);
-    })
-    // .then((res) => {
-    //   if (res.ok) {
-        
-    //   } else {
-    //     res.json().then((data) => {
-    //       setErrorMessage(data.error.message);
-    //     });
-    //   }
-    // });
-          
+    //
+    if(!newUser){
+      fetch("https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyBlvwokXZ0SoPCq00Mtg-Usj4z0ByGwlpg",{
+        method:"POST",
+        body:JSON.stringify(userInfo),
+        headers:{
+          "Content-Type": "application/json"
+        }
+      })
+      .then((res)=>{
+        if(res.ok){
+          return res.json().then((data)=>{
+            authCtx.login(data.idToken)
+             // data is the main thing for the authentication 
+            
+          })
+          // console.log(res);
+        }
+        else{
+          return res.json().then((data)=>{
+            console.log(data);
+            setErrorMessage(data.error.message)
+          })
+        }
+      })
+      
+    }   
     }
     function toggleAuth(){
       setNewUser((prev)=>!prev)
+    }
+    if(errorMessage!="")
+    {
+      alert(errorMessage)
+      setErrorMessage("");
+
     }
   return (
     <>
@@ -68,7 +99,8 @@ function Login() {
     <label  htmlFor="Password"> 
         <input ref={enteredPasswordref} className="login__form__inputs" name="Password" type="text" placeholder="Enter Your Password" />
     </label>
-    <button  className='login__form__submitbtn' onClick={handleAdduser} >Login</button>
+    { newUser && <button  className='login__form__submitbtn' onClick={handleAdduser} >SignUp</button>}
+    { !newUser && <button  className='login__form__submitbtn' onClick={handleAdduser} >Login</button>}
     <Loginviacard></Loginviacard>
     <Loginviacard></Loginviacard>
     {!newUser &&<p >Dont Have an account ? <b onClick={toggleAuth} >Sign Up</b></p>}
