@@ -1,0 +1,48 @@
+.main-solvation{
+    display: flex;
+    margin: .3em;
+    background-color: rgba(136, 238, 238, 0.826);
+    /* padding: .3em; */
+    /* justify-content: space-between; */
+}
+
+.main-status,.main-title,.main-difficulty,.main-solve{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-status{
+    flex-basis: 20%;
+    color: green;
+}
+.main-title{
+    flex-basis: 45%;
+    
+}
+.main-difficulty{
+    flex-basis: 20%;
+    color: red;
+}
+
+.main-solve{
+    flex-basis: 15%;
+    
+}
+
+.main-solve button{
+    margin: .7em;
+    padding: .5em;
+    background: white;
+    color: #3C84AB;
+    font-weight: 600;
+    border: none;
+    box-shadow: 0 0 1px grey;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.main-solve button:hover{
+    background: #3C84AB;
+    color: white;
+}

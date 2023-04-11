@@ -1,8 +1,17 @@
+a:link{
+  text-decoration: none;
+  color: black;
+}
+
+a:visited { 
+  color: rgb(2, 72, 84) 
+}
+
 .card{
   margin: 1rem;
   padding: 1rem;
   border-radius: 10px;
-
+  
 }
 
 .card .card-box{
