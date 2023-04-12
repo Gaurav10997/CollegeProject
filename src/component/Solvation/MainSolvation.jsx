@@ -1,18 +1,19 @@
 import React from 'react'
 import "./MainSolvation.css"
 
-function MainSolvation() {
+function MainSolvation({title}) {
   return (
     <div className='main-solvation'>
 
         <div className='main-status'>
-            <p>ok</p>
+            <p>Yes</p>
+
         </div>
         <div className='main-title'>
-            <p>Truth and Lie</p>
+            <p>{title}</p>
         </div>
         <div className='main-difficulty'>
-            <p>high</p>
+            <p>Hard</p>
         </div>
         <div className='main-solve'>
             <button>Solve now</button>

@@ -17,7 +17,7 @@ public static void main(String[] args) {
     <>
      <div className="Error">
         <h1 className='Error-heading' >Compilation Error</h1>
-        <pre>
+        <pre className='pre__error' >
             {Res}
         </pre>
     </div>

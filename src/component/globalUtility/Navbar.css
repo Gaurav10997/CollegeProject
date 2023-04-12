@@ -1,0 +1,18 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    background-color: skyblue;
+    box-shadow: 0 0 2px black;
+    position: sticky;
+}
+.navbarchild{
+    margin-left: 20px;
+    margin-right: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+.menuitems{
+    width: 300px;
+}

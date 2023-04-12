@@ -41,7 +41,6 @@ function TextEditor(props) {
           
         }
     }`
-
       const [code , setCode] = useState(userCode)
       let codeforThequestion =   `
       ${driverCode}${code}
@@ -59,7 +58,7 @@ function TextEditor(props) {
           method: "POST",
           headers: {
             "content-type": "application/json",
-            "X-RapidAPI-Key": "f375feaf3emsha83ccf69125e366p1d1e09jsn0343f71ba022",
+            "X-RapidAPI-Key": "eef8b037cfmsh3cd5f8f476f4d61p14c1afjsn9ae360892b93",
             "X-RapidAPI-Host": "online-code-compiler.p.rapidapi.com"
           },
           body: `${JSON.stringify(b)}`
@@ -71,8 +70,6 @@ function TextEditor(props) {
           .catch((err) => console.error(err)); 
       }
       
-
-
       return (
         <>
           <div className='right__side'>

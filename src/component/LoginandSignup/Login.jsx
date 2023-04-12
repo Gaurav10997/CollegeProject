@@ -1,8 +1,8 @@
+import "./login.css"
 import React from 'react'
 import Loginviacard from './Loginviacard'
 import {useState ,useRef,useContext } from 'react'
 import AuthContext from '../../store/AuthContest';
-import "./login.css"
 function Login() {
   const [newUser, setNewUser] = useState(true);
   const enteredEmailref = useRef();

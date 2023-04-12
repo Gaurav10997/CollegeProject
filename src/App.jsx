@@ -8,21 +8,31 @@ import Login from "./component/LoginandSignup/Login"
 import { BrowserRouter } from 'react-router-dom'
 import { Route ,Routes  } from 'react-router-dom'
 import { Link } from 'react-router-dom'
+import { useContext } from 'react'
 import AuthContext from './store/AuthContest'
+import { useState } from 'react'
+import { useEffect } from 'react'
 import './App.css'
 function App() {
+  const authCtx = useContext(AuthContext)
+ 
+  const isLogin =authCtx.isLoggedIn
+  console.log(isLogin)
   return (
     <>
+    
     <BrowserRouter>
      <Routes>
-      <Route path='/' element= {<Home></Home>}/>
-      <Route path='/practise' element= { <Practise></Practise>} />
-      <Route path='/leaderBoard' element= {<LeaderBoard/>}/>
-       <Route path='/contest' element= {<Contest></Contest>}/>
-       <Route path='/solve' element= {<Solve></Solve>}/>
-       <Route path='/compiler' element= {<Compiler></Compiler>}/>
-       <Route path='/login' element= {<Login></Login>}/>
-     </Routes>  
+     {!isLogin && <Route path='/' element= {<Login></Login>}/>}
+      {isLogin && <Route path='/' element= {<Home></Home>}/>} 
+          <Route path='/practise' element= { <Practise></Practise>} />
+            <Route path='/leaderBoard' element= {<LeaderBoard/>}/>
+            <Route path="/practise/basics" element={<Solve/>} ></Route>
+              <Route path='/contest' element= {<Contest></Contest>}/>
+              <Route path='/solve' element= {<Solve></Solve>}/>
+            <Route path='/compiler' element= {<Compiler></Compiler>}/>
+            
+     </Routes> 
      </BrowserRouter>
     </>
   )
