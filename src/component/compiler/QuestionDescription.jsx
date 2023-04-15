@@ -1,23 +1,40 @@
 import React from 'react'
 import BookmarkBorderIcon from '@mui/icons-material/BookmarkBorder';
 import "./QuestionDescription.css"
-function QuestionDescription() {
+function QuestionDescription({questionNo,questionName,difficultyLevel,questionScore,questionDescription,example1,example2}) {
   return (
     <>
     <div className="QuestionDescription__main">
         <div className="QuestionDescription__stats">
-            <h2 className='QuestionDescription__stats__items '>Wave Array</h2>
-            <h2 className='QuestionDescription__stats__items' >Medium</h2>
+            <h2 className='QuestionDescription__stats__items '>{ questionNo + ". " +questionName}</h2>
+            <h2 className='QuestionDescription__stats__items' >{difficultyLevel}</h2>
             <BookmarkBorderIcon className='QuestionDescription__stats__items' />
-            <h2 className='QuestionDescription__stats__items' >Score:40</h2>
+            <h2 className='QuestionDescription__stats__items' >Score:{questionScore}</h2>
         </div>
         <div className="QuestionDescription__paragraph">
-            <p>{`Given a sorted array arr[] of distinct integers. Sort the array into a wave-like array(In Place).
-            In other words, arrange the elements into a sequence such that arr[1] >= arr[2] <= arr[3] >= arr[4] <= arr[5].....
-
-            If there are multiple solutions, find the lexicographically smallest one.`}</p>
+            <p>{questionDescription}</p>
         </div>
-
+        <div className="QuestionDescription__example1">
+        <h2>Example 1:</h2>
+          <pre>
+            {example1}
+          </pre>
+        </div>
+        <div className="QuestionDescription__example1">
+        <h2>Example 2:</h2>
+          <pre>
+            {example2}
+          </pre>
+        </div>
+        <div className="QuestionDescription__task">
+        <br />
+        <h2>Your Task</h2>
+       
+        <p>The task is to complete the function 
+          {questionName} which takes the array and n as 
+          input parameters and returns the point of 
+          equilibrium. Return -1 if no such point exists.</p>
+        </div>
     </div>
         
     </>

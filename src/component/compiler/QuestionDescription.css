@@ -2,14 +2,33 @@
     padding: 10px;
     display: flex;
     justify-content: flex-start;
-}
-.QuestionDescription__stats__items{
+  }
+  .QuestionDescription__stats__items{
     padding: 10px;
-}
-
-.QuestionDescription__paragraph{
+  }
+  
+  .QuestionDescription__paragraph{
     padding-left: 10px;
     line-height: 2;
-    font-size: 1.3rem;
+    font-size: 1.6rem;
     max-width: 1200px;
-}
+  }
+  .QuestionDescription__example1{
+    margin:1em 0;
+    background-color: lightgray;
+    padding:  1em 1.3em 1em 0.6em;
+    font-size: 1.5rem;
+    width: 90%;
+  
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .QuestionDescription__example1>h2{
+    margin-bottom: 0.4em;
+    color: black;
+  }
+  .QuestionDescription__task{
+    line-height: 2em;
+    font-size: 1.3rem;
+    margin-left: 1.2em;
+  }
