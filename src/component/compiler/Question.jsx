@@ -8,7 +8,7 @@ function Question() {
   console.log(questionData[0].questionDescription);
   return (
     <>
-       <QuestionDescription 
+       {/* <QuestionDescription 
           questionNo = {questionData[0].questionNo}
           questionName = {questionData[0].questionName}
           difficultyLevel = {questionData[0].difficultyLevel}
@@ -17,7 +17,10 @@ function Question() {
           example1= {questionData[0].example1}
           example2= {questionData[0].example2}
           >
-          </QuestionDescription>
+          </QuestionDescription> */}
+          {/* <Error></Error> */}
+
+          <Congratulations />
       
     
     </>

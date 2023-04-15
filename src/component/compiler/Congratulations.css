@@ -8,5 +8,13 @@
 
 .Error-heading{
     margin-bottom: 40px;
+   
 
+}
+
+.Error{
+  border: 1px solid red;
+
+
+  background-color: rgb(248, 105, 105);
 }
