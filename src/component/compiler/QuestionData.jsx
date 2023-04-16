@@ -15,8 +15,41 @@ Output: [0,1]
 Explanation: Because nums[0] + nums[1] == 9, we return [0, 1].`,
         example2:`Input: nums = [3,2,4], target = 6
 Output: [1,2]`,
-    
+
+        driverCode:`
+        import java.util.*;
+        public class Main {
+          private static boolean checkTestCase(){
+              HashMap<Integer,Integer> map=new HashMap<>();
+              map.put(0,1);
+              map.put(1,1);
+              map.put(5,120);
+              map.put(8,40320);
+              map.put(10,3628800);
+              Solution obj=new Solution();
+              for(Map.Entry<Integer,Integer> mapElement : map.entrySet()){
+                  int key=mapElement.getKey();
+                  int value= mapElement.getValue();
+                  int ans=obj.factorial(key);
+                  if(ans!=value){
+                      return false;
+                  }
+              }
+              return true;
+          }
+          
+          public static void main(String[] args) {
+              boolean isPass=checkTestCase();
+              System.out.println(isPass);
+            }
+          }
         
+        `,
+        userCode:`class Solution{
+            public int factorial(int n){
+              
+            }
+        }`
     },
     
   ]
