@@ -2,19 +2,16 @@ export  const questionData=[
     {
         questionId:1,
         questionNo:1,
-        questionName:"Two Sum",
+        questionName:"Factorial",
         difficultyLevel:"easy",
-        questionScore:"2",
-        questionDescription:`Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
-  
-        You may assume that each input would have exactly one solution, and you may not use the same element twice.
-        
-        You can return the answer in any order.`,
-        example1:`Input: nums = [2,7,11,15], target = 9
-Output: [0,1]
-Explanation: Because nums[0] + nums[1] == 9, we return [0, 1].`,
-        example2:`Input: nums = [3,2,4], target = 6
-Output: [1,2]`,
+        questionScore:"30",
+        questionDescription:`The factorial of a number is the product of all the integers from 1 to that number. 
+        For example, the factorial of 5 (denoted by 5!) is 1 x 2 x 3 x 4 x 5 = 120.`,
+        example1:`Input: 5
+Output: 120
+Explanation: Because 5x4x3x2x1 == 120, we return 120.`,
+        example2:`Input: nums = 4
+Output: 24`,
 
         driverCode:`
         import java.util.*;
