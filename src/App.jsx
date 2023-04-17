@@ -7,17 +7,14 @@ import Solve from './component/Solvation/Solve'
 import Login from "./component/LoginandSignup/Login"
 import { BrowserRouter } from 'react-router-dom'
 import { Route ,Routes  } from 'react-router-dom'
-import { Link } from 'react-router-dom'
 import { useContext } from 'react'
 import AuthContext from './store/AuthContest'
-import { useState } from 'react'
-import { useEffect } from 'react'
 import './App.css'
 function App() {
   const authCtx = useContext(AuthContext)
  
   const isLogin =authCtx.isLoggedIn
-  console.log(isLogin)
+  // console.log(isLogin)
   return (
     <>
     
@@ -31,7 +28,6 @@ function App() {
               <Route path='/contest' element= {<Contest></Contest>}/>
               <Route path='/solve' element= {<Solve></Solve>}/>
             <Route path='/compiler' element= {<Compiler></Compiler>}/>
-            
      </Routes> 
      </BrowserRouter>
     </>

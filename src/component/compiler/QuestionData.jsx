@@ -1,33 +1,55 @@
-const questionData=[
+export  const questionData=[
     {
         questionId:1,
-        quesitionTitle:"find the factorial of given number",
-        questionLevel:"easy",
+        questionNo:1,
+        questionName:"Two Sum",
+        difficultyLevel:"easy",
         questionScore:"2",
-        questionDescription:" calculate a factorial of a given number for example 5!=5 * 4 * 3 * 2 * 1. You don't need to take input from console only write your code inside factorial method.",
-        questionExample:"INPUT 5 OUTPUT 120 ",
-        questionCategory:"Basic programming"
+        questionDescription:`Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
+  
+        You may assume that each input would have exactly one solution, and you may not use the same element twice.
         
+        You can return the answer in any order.`,
+        example1:`Input: nums = [2,7,11,15], target = 9
+Output: [0,1]
+Explanation: Because nums[0] + nums[1] == 9, we return [0, 1].`,
+        example2:`Input: nums = [3,2,4], target = 6
+Output: [1,2]`,
+
+        driverCode:`
+        import java.util.*;
+        public class Main {
+          private static boolean checkTestCase(){
+              HashMap<Integer,Integer> map=new HashMap<>();
+              map.put(0,1);
+              map.put(1,1);
+              map.put(5,120);
+              map.put(8,40320);
+              map.put(10,3628800);
+              Solution obj=new Solution();
+              for(Map.Entry<Integer,Integer> mapElement : map.entrySet()){
+                  int key=mapElement.getKey();
+                  int value= mapElement.getValue();
+                  int ans=obj.factorial(key);
+                  if(ans!=value){
+                      return false;
+                  }
+              }
+              return true;
+          }
+          
+          public static void main(String[] args) {
+              boolean isPass=checkTestCase();
+              System.out.println(isPass);
+            }
+          }
+        
+        `,
+        userCode:`class Solution{
+            public int factorial(int n){
+              
+            }
+        }`
     },
-    {
-        questionId:2,
-        quesitionTitle:"find the sum of array element ",
-        questionLevel:"medium",
-        questionScore:"2",
-        questionDescription:" You are given an array arr .calculate a sum of array element of even position and calculate the sum of array element of odd position and return the difference Ex :-  arr= [ 1 2 3 4 5 ]  evenposition_sum is 1+3+5=9 as the index of element is 0 2 and 4 respectavly  and oddposition_sum is 2+4=6 as the index of element is 1 and 3 respectavly  return 9-6 = 3 . You don't need to take input from console only write your code inside sum method.",
-        questionExample:"INPUT 2 4 1 8 17 9  OUTPUT -1 ",
-        questionCategory:"Array"
-        
-    },
-    {
-        questionId:3,
-        quesitionTitle:"check wheather a given string palindrome or not ",
-        questionLevel:"medium",
-        questionScore:"4",
-        questionDescription:" A string is said to be palindrome if the reverse of the string is the same as the string. For example, “abba” is a palindrome because the reverse of “abba” will be equal to “abba” so both of these strings are equal and are said to be a palindrome, but “abbc” is not a palindrome.  \
-        you are given a string  str return 'true' if str is palindrome otherwise 'false' ",
-        questionExample:"INPUT abba OUTPUT true ",
-        questionCategory:"String"
-        
-    }
-]
+    
+  ]

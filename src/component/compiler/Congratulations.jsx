@@ -9,5 +9,4 @@ function Congratulations() {
     
   )
 }
-
 export default Congratulations
