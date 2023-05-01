@@ -10,14 +10,14 @@ function Question({output}) {
     const [congo , setcongo] = useState(false)
     const [error , setError] = useState(false)
     const [question,setquestion] = useState(true);
-    console.log(output.length);
+    // console.log(output.length);
     useEffect(()=>{
-      if(output.length==5){
+      if(output && output.length==5){
         setcongo(true);
         setError(false)
         setquestion(false)
        }
-      else if(output.length>=6){
+      else if(output && output.length>=6){
         setError(true)
         setcongo(false)
         setquestion(false)
