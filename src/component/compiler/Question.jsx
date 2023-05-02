@@ -4,9 +4,7 @@ import QuestionDescription from './QuestionDescription'
 import Error from "./Error"
 import {questionData} from "./QuestionData.jsx"
 import { useState } from 'react'
-
-function Question({output}) {
-
+function Question({output,id}) {
     const [congo , setcongo] = useState(false)
     const [error , setError] = useState(false)
     const [question,setquestion] = useState(true);
@@ -29,13 +27,13 @@ function Question({output}) {
   return (
     <>
         { question &&   <QuestionDescription 
-          questionNo = {questionData[0].questionNo}
-          questionName = {questionData[0].questionName}
-          difficultyLevel = {questionData[0].difficultyLevel}
-          questionScore= {questionData[0].questionScore}
-          questionDescription= {questionData[0].questionDescription}
-          example1= {questionData[0].example1}
-          example2= {questionData[0].example2}
+          questionNo = {questionData[id].questionNo}
+          questionName = {questionData[id].questionName}
+          difficultyLevel = {questionData[id].difficultyLevel}
+          questionScore= {questionData[id].questionScore}
+          questionDescription= {questionData[id].questionDescription}
+          example1= {questionData[id].example1}
+          example2= {questionData[id].example2}
           >
           </QuestionDescription> }
           {error && <Error output={output} ></Error>}

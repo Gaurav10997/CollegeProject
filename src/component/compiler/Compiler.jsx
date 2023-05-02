@@ -1,8 +1,11 @@
-import { useState } from 'react';
+import { useState ,useEffect} from 'react';
 import Split from 'react-split'
 import Question from './Question';
 import TextEditor from './Texteditor.jsx';
 import {questionData} from "./QuestionData.jsx"
+import { Link } from 'react-router-dom';
+import { Route, Router } from 'react-router';
+import { useParams } from "react-router-dom";
 import "./Compiler.css"
 function Compiler() {
  const [data,setData] =  useState("");
@@ -17,6 +20,8 @@ function Compiler() {
   // function submitCode(t){
   //   console.log(t);
   // }
+  const { id } = useParams();
+  console.log(id);
   
 
   function submitCode(codeforThequestion){
@@ -45,14 +50,19 @@ function Compiler() {
       .catch((err) => console.error(err)); 
   }
   return (
-      <Split 
+ 
+
+  <Split 
       className='split'
       sizes={[40, 60]}
       minSize={750}
       >
-      <Question  output = {output} />
-      <TextEditor   userCode= {questionData[0].userCode} getData = {getData}/>
-      </Split>
+      <Question  output = {output} id={id-1} />
+      <TextEditor   userCode= {id && questionData[id-1].userCode} getData = {getData}/>
+    </Split> 
+
+
+      
   );
 }
 export default Compiler;
