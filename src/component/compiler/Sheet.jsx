@@ -7,7 +7,8 @@ export default [
 		questions: [
 			{
 				"Topic": "Array",
-				"Problem": "Reverse the array",
+				"id":"lame",
+				"Problem": "Print LameJoke",
 				"Done": false,
 				"Bookmark": false,
 				"Notes": "",
@@ -16,7 +17,7 @@ export default [
 			},
 			{
 				"Topic": "Array",
-				"Problem": "Find the maximum and minimum element in an array",
+				"Problem": "Reverse A String",
 				"Done": false,
 				"Bookmark": false,
 				"Notes": "",
@@ -339,7 +340,8 @@ export default [
 		questions: [
 			{
 				"Topic": "Matrix",
-				"Problem": "Spiral traversal on a Matrix",
+				"id":"factorial",
+				"Problem": "Factorial Of program",
 				"Done": false,
 				"Bookmark": false,
 				"Notes": "",
@@ -437,6 +439,7 @@ export default [
 		questions: [
 			{
 				"Topic": "String",
+				"id":"reverse",
 				"Problem": "Reverse a String",
 				"Done": false,
 				"Bookmark": false,

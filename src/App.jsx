@@ -8,6 +8,7 @@ import Login from "./component/LoginandSignup/Login"
 import { BrowserRouter } from 'react-router-dom'
 import { Route ,Routes  } from 'react-router-dom'
 import { useContext } from 'react'
+// import { BrowserRouter as Router, Route } from 'react-router-dom';
 import AuthContext from './store/AuthContest'
 import './App.css'
 function App() {
@@ -27,7 +28,7 @@ function App() {
             <Route path="/practise/basics" element={<Solve/>} ></Route>
               <Route path='/contest' element= {<Contest></Contest>}/>
               <Route path='/solve' element= {<Solve></Solve>}/>
-            <Route path='/compiler' element= {<Compiler></Compiler>}/>
+            <Route path='practise/basics/:id' element= {<Compiler></Compiler>}/>
      </Routes> 
      </BrowserRouter>
     </>
