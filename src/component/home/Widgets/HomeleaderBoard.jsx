@@ -1,5 +1,5 @@
 import React from 'react'
-import "./HomeLeaderBoard.css"
+// import "./HomeLeaderBoard.css"
 import RankNormal from './RankNormal'
 function HomeLeaderBoard() {
   
